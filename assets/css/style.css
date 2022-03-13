@@ -536,7 +536,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0px;
   transition: 0.5s;
   color: #fff;
-  background: linear-gradient(to left, #076670, #24a6da) !important;
+  background: linear-gradient(to right, #057885, #354fe4f5) !important;
   border: 0px solid #057885;
 }
 
@@ -1871,8 +1871,8 @@ section {
 }
 
 .logo0 {
-  width:  40px !important;
-  margin-bottom: 8px;
+  height: 60px !important;
+  width:  60px !important;
 }
   
 
