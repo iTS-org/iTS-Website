@@ -1875,8 +1875,12 @@ section {
   vertical-align: text-bottom !important;
 }
   
+#bouton_connecter button {
+  top: initial !important;
+}
 
-
-
-
-
+@media (max-width: 992px) {
+  .seconn {
+    padding-right: 2.5rem !important;
+  }
+}
