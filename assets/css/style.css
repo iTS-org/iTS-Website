@@ -506,6 +506,10 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.hero-container h1 {
+  text-align: left !important;
+}
+
 #hero h1 {
   margin: 11% 0px 1.5% 10%;
   font-size: 48px;
@@ -577,13 +581,16 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 1.5rem;
     line-height: 36px;
+    text-align: center !important;
   }
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 30px;
+    margin: 0px 0px 30px 6%;
+    text-align: center !important;
+    width: 85%;
   }
 }
 
@@ -1882,5 +1889,23 @@ section {
 @media (max-width: 992px) {
   .seconn {
     padding-right: 2.5rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo0 {
+    width: 40px !important;
+  }
+
+  .logo0 + span {
+    font-size: 1.4rem;
+  }
+
+  .watch-vid a{
+    width: 75%;
+  }
+
+  .watch-vid {
+    margin: 0;
   }
 }
