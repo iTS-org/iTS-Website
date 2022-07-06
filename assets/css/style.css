@@ -1810,7 +1810,9 @@ section {
   cursor: pointer;
 }
 
-
+.content-text {
+  width: 50%;
+}
 
 /* Modal */
 .bg-image {
@@ -1907,5 +1909,13 @@ section {
 
   .watch-vid {
     margin: 0;
+  }
+
+  .bg-image {
+    display: none;
+  }
+
+  .content-text {
+    width: 100% !important;
   }
 }
