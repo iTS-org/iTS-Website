@@ -15,6 +15,20 @@
       });
     }
   });
+  
+  $(window).on('resize', function() {
+    var windowsize = $(window).width();
+    if(windowsize < 990) {
+      $('#btn-contactez-nous').hide();
+      if (windowsize < 600) {
+        $('.watch-vid').removeClass('d-flex');
+      }
+    } else {
+      $('.watch-vid').removeClass('d-flex');
+      $('.watch-vid').addClass('d-flex');
+      $('#btn-contactez-nous').show();
+    }
+  });
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 16;
@@ -52,6 +66,7 @@
     }
   });
 
+
   // Activate smooth scroll on page load with hash links in the url
   $(document).ready(function() {
     if (window.location.hash) {
@@ -63,6 +78,14 @@
         }, 1500, 'easeInOutExpo');
       }
     }
+    if($(window).width() < 990) {
+      $('#btn-contactez-nous').hide();
+    }
+  });
+  $(document).on('click', '#contactez-nous', function(e) {
+    $('body').toggleClass('mobile-nav-active');
+    $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+    $('.mobile-nav-overly').toggle();
   });
 
   // Mobile Navigation
