@@ -311,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logbtn{
-  background: #fd3800 !important;
+  background: #057885 !important;
   border: 0px solid !important;
   font-size: 13px !important;
 }
@@ -506,12 +506,12 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.hero-container h1 {
+/* .hero-container h1 {
   text-align: left !important;
-}
+} */
 
 #hero h1 {
-  margin: 11% 0px 1.5% 10%;
+  margin: 11% 0px 1.5% 0px;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -522,13 +522,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h2 {
   color: #eee;
-  margin: 0px 0px 1.5% 10%;
+  margin: 0px 10% 1.5% 10%;
   font-size: 17px;
 }
 
-.watch-vid{
+/* .watch-vid{
   margin: 0px 200px 1.5% 10%;
-}
+} */
 
 #hero .btn-get-started {
   font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
@@ -910,6 +910,7 @@ section {
 .about-boxes .card:hover .card-icon i {
   background: #fff;
   color: #057885;
+  border:1px solid #057885;
 }
 
 @media (max-width: 1024px) {
@@ -1799,12 +1800,10 @@ section {
   color: #fff;
   font-family: "Poppins";
   max-width: 160px;
-  margin-left: 24%;
   cursor: pointer;
 }
 
 .estim{
-  margin-left: 28%;
   font-family: "Raleway";
   font-size: 13px;
   cursor: pointer;
@@ -1917,5 +1916,51 @@ section {
 
   .content-text {
     width: 100% !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+.why-us {
+  padding: 0;
+}
+
+.why-us .row {
+  overflow: hidden;
+}
+
+.why-us .content-item {
+  padding: 40px;
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin: -1px;
+}
+
+.why-us .content-item span {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  color: #057885;
+}
+
+.why-us .content-item h5 {
+  color: #057885;
+  font-size: 26px;
+  font-weight: 300;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.why-us .content-item p {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .why-us .content-item {
+    padding: 40px 0;
   }
 }

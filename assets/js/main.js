@@ -220,6 +220,14 @@
     items: 1
   });
 
+    // Portfolio details carousel
+    $(".hero-text-carousel").owlCarousel({
+      dots: false,
+      autoplay: true,
+      loop: true,
+      items: 1
+    });
+
   // Init AOS
   function aos_init() {
     AOS.init({
