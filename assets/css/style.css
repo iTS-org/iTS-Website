@@ -1964,3 +1964,59 @@ section {
     padding: 40px 0;
   }
 }
+
+/*--------------------------------------------------------------------
+# Workflow
+----------------------------------------------------------------------*/
+#workflow ol {
+  height: 60px;
+  text-transform: uppercase;
+}
+
+.workflow-list-step {
+  display: inline;
+  color: #fff;
+  margin: 15px;
+  margin: 0;
+  position: relative;
+  background-color: transparent;
+}
+.workflow-list-step:before {
+  border-right: 2em solid #057885;
+}
+.workflow-list-step:after {
+  border-left: 2em solid #057885;
+}
+.workflow-list-step:before {
+  border-bottom: 4em solid transparent;
+  border-left: 0 solid transparent;
+  content: "";
+  display: table-cell;
+  height: 100%;
+}
+
+.workflow-list-step:after {
+  border-top: 4em solid transparent;
+  border-right: 0 solid transparent;
+  content: "";
+  display: table-cell;
+  height: 100%;
+}
+
+.step-descriptor {
+  display: table-cell;
+  text-align: center;
+  height: 100%;
+  padding: 15px;
+  background-color: #057885;
+}
+
+#workflow .first:before {
+  border-left: 2em solid transparent;
+  border-bottom: 0 solid transparent;
+}
+
+#workflow .last:after {
+  border-top: 2em solid transparent;
+  border-bottom: 2em solid transparent;
+}
